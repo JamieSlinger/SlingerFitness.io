@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+section{
+    padding: 50px 10%;
+}
+
+:root{
+    --text-color: #ffffff;
+    --main-color: rgb(241, 241, 7);
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 100px;
+    background: rgb(20, 20, 20);
+}
+
+#menu-icon{
+    color: var(--text-color);
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+#menu-icon:hover{
+    color: var(--main-color);
+}
+
+.logo{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+
+}
+
+.logo span{
+    color: var(--main-color);
+}
+
+.navbar{
+    position: relative;
+    display: flex;
+}
+
+.navbar a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+}
+
+/*Home Section*/
+
+.home{
+width: 100%;
+min-height: 100vh;
+background-image: url("./assets/pexels-pikx-by-panther-1547248.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+background-attachment: fixed;
+display: flex;
+align-items: center;
+
+}
+
+.home-text h1{
+    color: var(--text-color);
+   font-size: 4rem;
+padding-bottom: 2rem;
+}
+
+.home-text span{
+    color: var(--main-color);
+}
+
+
+/*About Section*/
+
+.about{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+}
+
+.about-text{
+    color: var(--text-color);
+    padding-left: 10%;
+    
+}
+
+.about-text h1{
+    font-size: 3rem;
+    padding-bottom: 3rem;
+}
+
+.about-img img{
+    width: 22rem;
+    height: 28rem;
+}
+
+/*Contact Section*/
+
+.contact{
+    background: rgb(240, 240, 240);
+    
+}
+
+.contact h1{
+    font-size: 3rem;
+   text-align: center;
+   padding-bottom: 3rem;
+}
+
+.contact .contact-grid{
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7rem,auto));
+    gap: 3rem;
+    justify-content: space-between;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.contact-box {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.contact-box i{
+    
+    background-color: #fff;
+    border: black;
+    border-style: solid;
+    border-radius: 5rem;
+    padding: 1rem;
+}
+
+.contact-box h3{
+    padding-top: 0.6rem;
+    padding-bottom: 0.4rem;
+}
+
+.contact-box p{
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+/*Animations*/
+
+
+/*Making Responsive*/
+@media (max-width:768px){
+
+    #menu-icon{
+        display: initial;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: -100rem;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--text-color);
+        text-align: center;
+        box-shadow: 0 0.5rem 0.5rem rgb(0, 0, 0/10%);
+        transition: 0.4s ease;
+        
+    }
+
+    .navbar a{
+        color: black;
+        padding: 1.5rem;
+        display: block;
+        font-size: 1.3rem;
+    }
+
+   .navbar a:hover{
+    color:black;
+    background: var(--main-color);
+   }
+
+    .navbar.active{
+        top: 100%;
+    }
+
+    .about-img img{
+        width: 16rem;
+        height: 20rem;
+    }
+
+    .contact .contact-grid{
+        width: 90%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        
+    }
+
+    .contact .contact-box{
+        width: 190px;
+        height: 180px;
+        
+    }
+
+
+}
+
+@media (max-width:576px){
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    header{
+
+        padding: 18px 30px;
+    }
+
+    .about{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        
+    }
+.about .about-text{
+    text-align: center;
+    padding-left: 0;
+}
+
+    .about-img{
+        padding-top: 2rem;
+        
+    }
+
+    .contact .contact-grid{
+   
+           display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+     padding-right: 0;
+     padding-left: 0;
+     width: 100%;
+     gap: 1.5rem;
+     
+    }
+
+    .contact .contact-box{
+       width: fit-content;
+       height: fit-content;
+        
+    }
+}
