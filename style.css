@@ -33,6 +33,7 @@ header {
   justify-content: space-between;
   padding: 18px 100px;
   background: rgb(20, 20, 20);
+  transform: translateX(-200%);
 }
 
 #menu-icon {
@@ -50,6 +51,7 @@ header {
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--text-color);
+ 
 }
 
 .logo span {
@@ -59,6 +61,7 @@ header {
 .navbar {
   position: relative;
   display: flex;
+  
 }
 
 .navbar a {
@@ -84,6 +87,7 @@ header {
   background-attachment: fixed;
   display: flex;
   align-items: center;
+ 
 }
 
 .home-text h1 {
@@ -94,6 +98,10 @@ header {
 
 .home-text span {
   color: var(--main-color);
+}
+
+.home-text{
+  transform: translateX(50%);
 }
 
 /*About Section*/
@@ -149,7 +157,7 @@ font-size: 1.8rem;
     padding: 2rem;
     text-align: center justify ;
     line-height: 1.5rem;
-   
+    
 }
 
 .services table{
@@ -164,6 +172,12 @@ margin-bottom: 3rem;
 .table-hidden{
     display: none;
 }
+
+/*.services th,td{
+  transform:translateX(-300%) ;
+}*/
+
+
 /*Contact Section*/
 
 
