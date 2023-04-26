@@ -173,9 +173,9 @@ margin-bottom: 3rem;
     display: none;
 }
 
-/*.services th,td{
+.services th,td{
   transform:translateX(-300%) ;
-}*/
+}
 
 
 /*Contact Section*/
@@ -377,6 +377,8 @@ color: #ffffff;
 .table-hidden{
     display: block;
 }
+
+
   .services .table-hidden table tr{
     
     width: 100%;
