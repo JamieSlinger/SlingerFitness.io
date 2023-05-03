@@ -18,10 +18,10 @@ tl.to('header',{x: "0%", duration:1});
 
 tl.to('.home-text',{x: "0%", duration:1},"-=1");
 
-gsap.registerPlugin(ScrollTrigger);
+//gsap.registerPlugin(ScrollTrigger);
 
 
 //gsap.to('.services th,td',{ScrollTrigger:{trigger: '#services', start:'top top',x: "0%", duration:1, stagger:0.25}});
 
-gsap.to('.services th ,td',{scrollTrigger: '.services', start:'top top',x: "0%", duration:1, stagger:0.25});
-//gsap.to(' .table-hidden tr',{scrollTrigger: '.services', start:'top top',x: "0%", duration:1, stagger:0.25});
+//gsap.to('.table-primary th ,td',{scrollTrigger: '.services', start:'top top',x: "0%", duration:1, stagger:0.25});
+//gsap.to('.table-hidden th,td',{scrollTrigger: '.services', start:'top top',x: "0%", duration:1, stagger:0.25},"-=1");

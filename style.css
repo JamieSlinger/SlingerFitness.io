@@ -173,9 +173,13 @@ margin-bottom: 3rem;
     display: none;
 }
 
-.services th,td{
+/*.table-primary th,td{
   transform:translateX(-300%) ;
 }
+
+.table-hidden th,td{
+  transform:translateX(-300%) ;
+}*/
 
 
 /*Contact Section*/
